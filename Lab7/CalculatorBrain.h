@@ -15,6 +15,7 @@ typedef enum actionType : long {
     add,
     equal
 } actionType;
+
 @property actionType currentAction;
 @property NSString *calculationString;
 @property NSString *savedOperand;
@@ -25,7 +26,8 @@ typedef enum actionType : long {
 - (void)clearCalculationString;
 - (void)negateCalculationString;
 - (BOOL)hasDecimalPlaces: (double)operand1 _:(double)operand2;
-- (void)tangentCalculationString;
+- (void)setCalculationStringToTangent;
 - (void)commitAction;
 - (BOOL)recognizeAction: (int)tag;
+
 @end

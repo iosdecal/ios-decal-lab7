@@ -47,7 +47,7 @@
 }
 
 - (IBAction)tangent:(id)sender {
-    [_Cbrain tangentCalculationString];
+    [_Cbrain setCalculationStringToTangent];
     [self updatecalculationView];
 }
 - (IBAction)actionPressed:(id)sender {

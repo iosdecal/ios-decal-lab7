@@ -14,7 +14,6 @@
 {
     self = [super init];
     if (self) {
-        //Do Stuff
         _calculationString = @"0.0";
         _savedOperand = @"0.0";
         _currentAction = multiply;
@@ -53,6 +52,7 @@
 - (void)clearCalculationString {
     [self setCalculationString:@"0.0"];
 }
+
 - (void)negateCalculationString {
     if([_calculationString hasPrefix:@"-"]) {
         _calculationString = [_calculationString substringFromIndex:1];
@@ -60,6 +60,7 @@
         _calculationString = [@"-" stringByAppendingString:_calculationString];
     }
 }
+
 - (BOOL)hasDecimalPlaces: (double)operand1 _:(double)operand2 {
     if ((int)operand1 != operand1) {
         return true;
@@ -69,10 +70,12 @@
     }
     return false;
 }
-- (void)tangentCalculationString {
+
+- (void)setCalculationStringToTangent {
     double input = [_calculationString doubleValue];
-    _calculationString = [NSString stringWithFormat:@"%.02f",tan(input) ];
+    _calculationString = [NSString stringWithFormat:@"%.02f",tan(input)];
 }
+
 - (void)commitAction {
     double operand1 = [_savedOperand doubleValue];
     double operand2 = [_calculationString doubleValue];
@@ -82,9 +85,6 @@
             total = operand1 * operand2;
             break;
         }
-        case subtract:
-            total = operand1 - operand2;
-            break;
         case add:
             total = operand1 + operand2;
             break;
@@ -97,6 +97,7 @@
         _calculationString = [NSString stringWithFormat:@"%d", (int)total];
     }
 }
+
 - (BOOL)recognizeAction: (int)tag {
     switch (tag) {
         case equal:
