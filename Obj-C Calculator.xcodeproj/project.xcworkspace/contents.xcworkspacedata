@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Lab7.xcodeproj">
+      location = "self:/Users/paigeplander/Desktop/ios-decal-lab7/Obj-C Calculator.xcodeproj">
    </FileRef>
 </Workspace>

@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		4189C5C41EA49A110089B39A /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
 		4189C5C51EA49A110089B39A /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
-		41DF05E71EA4229E00F6A8DC /* Lab7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41DF05E71EA4229E00F6A8DC /* Obj-C Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obj-C Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DF05EB1EA4229E00F6A8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41DF05ED1EA4229E00F6A8DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41DF05EE1EA4229E00F6A8DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		41DF05DE1EA4229E00F6A8DC = {
 			isa = PBXGroup;
 			children = (
-				41DF05E91EA4229E00F6A8DC /* Lab7 */,
+				41DF05E91EA4229E00F6A8DC /* Obj-C Calculator */,
 				41DF05E81EA4229E00F6A8DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		41DF05E81EA4229E00F6A8DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41DF05E71EA4229E00F6A8DC /* Lab7.app */,
+				41DF05E71EA4229E00F6A8DC /* Obj-C Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41DF05E91EA4229E00F6A8DC /* Lab7 */ = {
+		41DF05E91EA4229E00F6A8DC /* Obj-C Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				41DF05ED1EA4229E00F6A8DC /* AppDelegate.h */,
@@ -73,7 +73,7 @@
 				41DF05FB1EA4229E00F6A8DC /* Info.plist */,
 				41DF05EA1EA4229E00F6A8DC /* Supporting Files */,
 			);
-			path = Lab7;
+			path = "Obj-C Calculator";
 			sourceTree = "<group>";
 		};
 		41DF05EA1EA4229E00F6A8DC /* Supporting Files */ = {
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41DF05E61EA4229E00F6A8DC /* Lab7 */ = {
+		41DF05E61EA4229E00F6A8DC /* Obj-C Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41DF05FE1EA4229E00F6A8DC /* Build configuration list for PBXNativeTarget "Lab7" */;
+			buildConfigurationList = 41DF05FE1EA4229E00F6A8DC /* Build configuration list for PBXNativeTarget "Obj-C Calculator" */;
 			buildPhases = (
 				41DF05E31EA4229E00F6A8DC /* Sources */,
 				41DF05E41EA4229E00F6A8DC /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = Lab7;
+			name = "Obj-C Calculator";
 			productName = Lab7;
-			productReference = 41DF05E71EA4229E00F6A8DC /* Lab7.app */;
+			productReference = 41DF05E71EA4229E00F6A8DC /* Obj-C Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41DF05E21EA4229E00F6A8DC /* Build configuration list for PBXProject "Lab7" */;
+			buildConfigurationList = 41DF05E21EA4229E00F6A8DC /* Build configuration list for PBXProject "Obj-C Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41DF05E61EA4229E00F6A8DC /* Lab7 */,
+				41DF05E61EA4229E00F6A8DC /* Obj-C Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -282,9 +282,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 798AZH6TJR;
-				INFOPLIST_FILE = Lab7/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Obj-C Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.Lab7;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.iosdecal.Objc-calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -294,9 +294,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 798AZH6TJR;
-				INFOPLIST_FILE = Lab7/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Obj-C Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.Lab7;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.iosdecal.Objc-calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -304,7 +304,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41DF05E21EA4229E00F6A8DC /* Build configuration list for PBXProject "Lab7" */ = {
+		41DF05E21EA4229E00F6A8DC /* Build configuration list for PBXProject "Obj-C Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41DF05FC1EA4229E00F6A8DC /* Debug */,
@@ -313,7 +313,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41DF05FE1EA4229E00F6A8DC /* Build configuration list for PBXNativeTarget "Lab7" */ = {
+		41DF05FE1EA4229E00F6A8DC /* Build configuration list for PBXNativeTarget "Obj-C Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41DF05FF1EA4229E00F6A8DC /* Debug */,
